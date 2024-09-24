@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "m_pd.h": "c",
+        "assert.h": "c",
+        "corecrt.h": "c",
+        "cmath": "cpp"
+    },
+    "makefile.makePath": "C:\\Program Files (x86)\\GnuWin32\\bin\\make.exe"
+}

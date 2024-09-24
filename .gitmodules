@@ -1,0 +1,2 @@
+[submodule "pd-lib-builder"]
+	url = git@github.com:rbeesley/pd-lib-builder.git
