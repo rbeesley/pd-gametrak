@@ -3,7 +3,8 @@
 # settings and rules.
 PLATFORM=x86_64-w64-mingw32
 PDDIR=/mnt/c/Program\ Files/Pd
-PDINCLUDEDIR=/mnt/c/Program\ Files/Pd/src
+#PDINCLUDEDIR=/mnt/c/Program\ Files/Pd/src
+PDINCLUDEDIR=pd-include
 PDBINDIR=/mnt/c/Program\ Files/Pd/bin
 PDLIBDIR=/mnt/c/AddData/Roaming/Pd
 
@@ -11,14 +12,15 @@ PDLIBDIR=/mnt/c/AddData/Roaming/Pd
 #cflags += -stdlib=libc++ 
 
 # enable to build under WSL
-cflags += -I ~/dev/xwin/sdk/include
+#cflags += -I ~/dev/xwin/sdk/include
+cflags += -I xwin-sdk-include
 
 # library name
 lib.name = gametrak
 
 # input source file (class name == source file basename)
-transform.class.sources = transform.cpp Quaternion.cpp vecteur3d.cpp
-calibrate.class.sources = calibrate.cpp
+transform.class.sources = src/transform.cpp src/Quaternion.cpp src/vecteur3d.cpp
+calibrate.class.sources = src/calibrate.cpp
 
 # all extra files to be included in binary distribution of the library
 datafiles = transform-help.pd calibrate-help.pd README.md

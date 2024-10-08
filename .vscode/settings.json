@@ -5,5 +5,5 @@
         "corecrt.h": "c",
         "cmath": "cpp"
     },
-    "makefile.makePath": "C:\\Program Files (x86)\\GnuWin32\\bin\\make.exe"
+    "makefile.makePath": "/usr/bin/make"
 }
