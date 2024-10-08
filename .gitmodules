@@ -1,2 +1,4 @@
 [submodule "pd-lib-builder"]
+	path = pd-lib-builder
 	url = git@github.com:rbeesley/pd-lib-builder.git
+	branch = master
